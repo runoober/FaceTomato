@@ -1,5 +1,7 @@
 # FaceTomato · AI 辅助简历分析与模拟面试系统
 
+简体中文 | [English](./README_EN.md)
+
 <div align="center">
 
 <img src="./assets/facetomato_new.jpg" alt="FaceTomato preview" width="880" />
@@ -208,13 +210,3 @@ uv run python scripts/build_interview_zvec_index.py
 - 感谢 [zvec](https://zvec.org/) 这个项目让我轻松的加入了 rag 功能;
 
 - 感谢 LinuxDo 社区中佬友无私分享的的各种知识，这对我开发项目帮助很大。总之，学 AI, 上 [LinuxDo](https://linux.do/)!
-
-## 📈 Star History
-
-<a href="https://www.star-history.com/?repos=Infinityay%2FFaceTomato&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Infinityay/FaceTomato&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=Infinityay/FaceTomato&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Infinityay/FaceTomato&type=date&legend=top-left" />
- </picture>
-</a>
