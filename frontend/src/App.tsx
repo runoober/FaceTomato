@@ -5,6 +5,7 @@ import {
   ChevronDown,
   ClipboardList,
   FileText,
+  Github,
   GitCompare,
   Menu,
   Mic,
@@ -802,8 +803,25 @@ const Sidebar = ({ mobile = false, onNavigate, onClose, onOpenRuntimeSettings }:
       </nav>
 
       <div className="border-t p-3">
-        {!mobile && <RuntimeSettingsTrigger onOpen={onOpenRuntimeSettings} />}
-        <div className={cn(!mobile && "mt-3")}>
+        <a
+          href="https://github.com/Infinityay/FaceTomato"
+          target="_blank"
+          rel="noreferrer"
+          className="flex h-9 w-full items-center justify-between gap-2 rounded-lg border border-border bg-theme-background px-3 text-sm font-medium shadow-sm transition-all hover:-translate-y-px hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          aria-label="在 GitHub 查看 FaceTomato"
+        >
+          <span className="flex items-center gap-2">
+            <Github className="h-4 w-4" />
+            <span>GitHub</span>
+          </span>
+          <span className="text-[11px] font-normal text-muted-foreground">开源项目</span>
+        </a>
+        {!mobile && (
+          <div className="mt-3">
+            <RuntimeSettingsTrigger onOpen={onOpenRuntimeSettings} />
+          </div>
+        )}
+        <div className="mt-3">
           <ThemeToggle />
         </div>
         <div className="mt-3 rounded-md bg-accent/50 p-3 text-xs text-muted-foreground">

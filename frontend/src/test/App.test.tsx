@@ -239,6 +239,17 @@ describe("App runtime settings", () => {
     expect(screen.getAllByText("FaceTomato 面柿")).toHaveLength(2);
   });
 
+  it("links to the FaceTomato GitHub repository from the sidebar", async () => {
+    renderApp();
+
+    await screen.findByText("Resume Page");
+
+    expect(screen.getByRole("link", { name: "在 GitHub 查看 FaceTomato" })).toHaveAttribute(
+      "href",
+      "https://github.com/Infinityay/FaceTomato"
+    );
+  });
+
   it("shows a route fallback when a sidebar navigation suspends", async () => {
     const user = userEvent.setup();
     const deferred = createDeferred();
